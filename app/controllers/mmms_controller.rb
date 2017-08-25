@@ -1,7 +1,15 @@
 class MmmsController < InheritedResources::Base
-  private
 
-  def mmm_params
-    params.require(:mmm).permit(:title, :content)
+  def index
+    @mmms = mmm.all
+    case @mmms
+    when "spring" then
+      link_to
+
+    end
+    private
+
+    def mmm_params
+      params.require(:mmm).permit(:title, :content)
+    end
   end
-end

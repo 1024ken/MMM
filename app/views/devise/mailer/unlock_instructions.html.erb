@@ -1,0 +1,4 @@
+<p>こんにちは、 <%= @resource.email %>さん。</p>
+<p>ログインに失敗したため、アカウントはロックされています。</p>
+<p>下記のリンクを押してアカウントを開いて下さい。</p>
+<p><%= link_to 'アカウントを開いてください。', unlock_url(@resource, unlock_token: @token) %></p>

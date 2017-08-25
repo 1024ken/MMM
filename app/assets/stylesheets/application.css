@@ -13,27 +13,55 @@
  *= require_tree .
  *= require_self
  */
-
-body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+html {
+    height: 100%;
 }
 
-.nav-bar__user--login{
-  margin-right: 10px;
-  background-color: #ddd;
-  position: absolute;
-  right: 50px;
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #EEFFFF;
+  margin: auto;
+  font-size: 20px;
+  position: relative;
 }
 
-.nav-bar__user--logout{
-  position: absolute;
-  right: 180px;
-}
-
-.portfolio-item {
-    margin-bottom: 25px;
+.navbar.navbar-default.navbar-fixed-top {
+    height: 82px;
+    background-color: #EEFFFF;
 }
 
 footer {
-    margin: 50px 0;
+  width: 100%;
+  height: 55px;
+  background-color: #EEFFFF;
+  margin: auto;
+  font-size: 12px;
+  position: relative;
+  bottom: 0;
+}
+
+p {
+  padding-top: 20px;
+  font-family: "ＭＳ P明朝",serif;
+  text-align : center;
+  background-color: #EEFFFF;
+}
+
+.main-body {
+  margin: 0px;
+}
+
+.nav-bar_user-login {
+  margin-top: 18px;
+  margin-right: -30px;
+  position: fixed;
+  right: 180px;
+}
+
+.nav-bar_user-logout {
+  margin-top: 18px;
+  background-color: #ddd;
+  position: fixed;
+  right: 15px;
 }
