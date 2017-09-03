@@ -17,33 +17,23 @@
   <p class="alert alert-danger"><%= alert %></p>
 <% end %>
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button class="navbar-toggle">
-        <span class="sr-only"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"><四季の昆虫></a>
-        <%= link_to "ログイン", "#",class: "btn btn-lg btn-info nav-bar_user-login" %>
-        <%= link_to "ログアウト", "#",class: "btn btn-lg btn-default nav-bar_user-logout" %>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href="#"></a>
-          </li>
-          <li>
-            <a href=""></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div class="container-main">
+    <div class="navbar-brand" href="#"> Seasons insects </div>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href="#"></a>
+      </li>
+      <li>
+        <a href=""></a>
+      </li>
+    </ul>
+  </div>
+</nav>
 </div>
 </heder>
 <%= yield %>

@@ -43,6 +43,7 @@ footer {
 
 p {
   padding-top: 20px;
+  margin-bottom: 0px;
   font-family: "ＭＳ P明朝",serif;
   text-align : center;
   background-color: #EEFFFF;
@@ -52,16 +53,18 @@ p {
   margin: 0px;
 }
 
-.nav-bar_user-login {
-  margin-top: 18px;
-  margin-right: -30px;
-  position: fixed;
-  right: 180px;
+ .navbar-brand {
+  margin-left: 580px;
+  font-family: cursive;
+  font-color: #0000FF
+  text-align : center;
 }
 
-.nav-bar_user-logout {
-  margin-top: 18px;
-  background-color: #ddd;
-  position: fixed;
-  right: 15px;
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
 }
