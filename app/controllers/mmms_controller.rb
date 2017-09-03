@@ -1,5 +1,5 @@
 class MmmsController < InheritedResources::Base
-  before_action :authenticate_user!
+  # before_action :authenticate_user!
 
   # def index
   #   @mmms = mmm.all
