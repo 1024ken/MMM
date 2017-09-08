@@ -95,6 +95,7 @@ strong {
     box-shadow: none;
 }
 
-.field-devise {
-  margin-top: 50px;
+.autofocus.email {
+    width: 330px;
+    height: 36px;
 }

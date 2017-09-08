@@ -49,6 +49,9 @@ gem 'pry-stack_explorer'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'redis'
 gem 'sprockets', '3.6.3'
+gem 'jquery-rails'
+gem 'webpacker', github: 'rails/webpacker'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
