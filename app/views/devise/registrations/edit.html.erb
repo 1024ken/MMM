@@ -5,32 +5,32 @@
       <%= devise_error_messages! %>
       <div class="field-registration">
         <%= f.label :メールアドレス %><br />
-        <%= f.email_field :email, autofocus: true %>
+        <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
-      <div class="field">
+      <div class="field-registration">
         <%= f.label :パスワード %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "パスワード" %>
         <% if @minimum_password_length %>
           <br />
           <em><%= @minimum_password_length %> 文字以上</em>
         <% end %>
       </div>
-      <div class="field">
+      <div class="field-registration">
         <%= f.label :パスワードの確認 %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class: "form-control", placeholder: "確認用パスワード" %>
       </div>
-      <div class="field">
+      <div class="field-registration">
         <%= f.label :現在のパスワード %><br />
-        <%= f.password_field :current_password, autocomplete: "off" %>
+        <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "現在のパスワード" %>
       </div>
       <div class="actions">
         <%= f.submit "更新", class: "btn btn-primary btn-block" %>
       </div>
     <% end %>
-    <p> <%= button_to "アカウントを削除してもいいですか", registration_path(resource_name), data: { confirm: "本当に削除しますか?" }, method: :delete %></p>
-    <%= link_to "戻る", :back %>
+    <p> <%= button_to "アカウントを削除してもいいですか?", registration_path(resource_name), data: { confirm: "本当に削除しますか?" }, method: :delete, notice: "アカウントを削除しました！", class: "btn btn-default btn-sm btn btn-danger" %></p>
+    <%= link_to "戻る", :back, class: "btn btn-default btn-sm" %>
   </div>
 </div>
