@@ -1,4 +1,5 @@
 class BlogsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @blogs = Blog.all
   end
@@ -12,10 +13,10 @@ class BlogsController < ApplicationController
   end
 
   def create
-    @blog = Blog.new(blogs_params)
-    @blogs.user_id = current_user.id
+    @blog = current_user.blogs.build(blogs_params)
     if @blog.save
       redirect_to blogs_path, notice: "ブログを作成しました！"
+      NoticeMailer.sendmail_blog(@blog).deliver
     else
       render 'new'
     end
@@ -35,7 +36,7 @@ class BlogsController < ApplicationController
   end
 
   def confirm
-    @blog = Blog.new(blogs_params)
+    @blog = current_user.blogs.build(blogs_params)
     render :new if @blog.invalid?
   end
 
