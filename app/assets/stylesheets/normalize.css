@@ -479,3 +479,7 @@ label {
 .btn-block {
   font-family: "ＭＳ P明朝",serif;
 }
+
+#error_explanation ul li {
+  list-style: none;
+}

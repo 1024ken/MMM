@@ -27,6 +27,25 @@ header {
   position: relative;
 }
 
+.main-body {
+  margin: 0px;
+}
+
+.navbar-brand {
+  margin-left: 640px;
+  margin-top: 17px;
+  font-size: 40px;
+  font-family: cursive;
+  font-color: #0000FF
+}
+
+.navbar-brand-signout {
+    margin-right: 580px;
+    left: 450px;
+    font-size: 20px;
+    position: relative;
+}
+
 .navbar.navbar-default.navbar-fixed-top {
     height: 82px;
     background-color: #EEFFFF;
@@ -45,17 +64,6 @@ footer {
 p {
   padding-top: 10px;
   font-family: "ＭＳ P明朝",serif;
-  text-align : center;
-}
-
-.main-body {
-  margin: 0px;
-}
-
- .navbar-brand {
-  margin-left: 580px;
-  font-family: cursive;
-  font-color: #0000FF
   text-align : center;
 }
 

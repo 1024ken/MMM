@@ -35,7 +35,9 @@ gem 'annotate', require: false
 gem 'ridgepole'
 gem 'kaminari'
 gem 'devise'
+gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'omniauth-facebook'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "paperclip"
 gem 'therubyracer'
@@ -71,6 +73,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'letter_opener_web'
+  gem 'dotenv-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

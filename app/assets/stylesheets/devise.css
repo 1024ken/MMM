@@ -18,8 +18,14 @@ body {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.input-group {
-  margin: 5px 0px;
+.btn.btn-lg.btn-block.btn-#{provider} {
+    padding-top: 0px;
+    border-top-width: 0px;
+    padding-bottom: 0px;
+}
+
+.btn-block {
+  display: ;
 }
 
 .addon-facebook {
@@ -93,4 +99,8 @@ a {
 .autofocus.email {
     width: 330px;
     height: 36px;
+}
+
+.field-sign-up {
+    margin-top: 15px;
 }
