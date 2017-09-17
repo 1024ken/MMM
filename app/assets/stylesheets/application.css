@@ -70,3 +70,8 @@ p {
 body {
   text-align: center;
 }
+
+.flash {
+  color: #000000;
+  padding-top: 100px;
+}

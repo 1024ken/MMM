@@ -19,7 +19,7 @@
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-main">
       <%= link_to "Seasons", root_path, class: "navbar-brand" %>
-      <%= link_to "Sign out", new_user_session_path, class: "navbar-brand-signout" %>
+      <%= link_to "Sign out", destroy_user_session_path, class: "navbar-brand-signout", method: :delete %>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">

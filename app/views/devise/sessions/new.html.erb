@@ -9,7 +9,7 @@
                 <i class="fa fa-fw fa-2x fa-<%= "#{provider}"%> fa-fw"></i>
               </span>
               <a class="btn btn-lg btn-block btn-#{provider}">
-                <%= link_to "#{provider}サインイン with #{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn-#{provider} btn btn-lg btn-block" %><br />
+                <%= link_to "#{OmniAuth::Utils.camelize(provider)}", omniauth_authorize_path(resource_name, provider), class: "btn-#{provider} btn btn-lg btn-block" %><br />
             </a>
           </div>
         <% end -%>

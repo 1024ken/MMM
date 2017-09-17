@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="col-md-4 col-md-offset-4">
+  <div class="col-md-4 col-md-offset-4 all">
     <h2>パスワード再設定</h2>
     <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
       <%= devise_error_messages! %>
@@ -8,9 +8,9 @@
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
       <div class="actions">
-        <%= f.submit "再設定メールを送信する", class: "form-control" %>
+        <%= f.submit "再設定メールを送信する", class: "btn btn-primary" %>
       </div>
     <% end %>
-    <%= link_to "戻る", new_user_session_path, class: "btn btn-default btn-sm" %>
+    <%= link_to "戻る", new_user_session_path, class: "btn btn-default" %>
   </div>
 </div>

@@ -38,6 +38,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem "paperclip"
 gem 'therubyracer'

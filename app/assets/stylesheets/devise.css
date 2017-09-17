@@ -7,8 +7,16 @@ body {
 }
 
 .col-md-4.col-md-offset-4 {
-    margin-top: 90px;
+    margin-top: 50px;
     height: 715px;
+}
+
+.col-md-4.col-md-offset-4.all {
+	margin-top: 150px;
+}
+
+.wrapper.col-md-4.col-md-offset-4.col-sm-10.all {
+	margin-top: 150px;
 }
 
 .box {
@@ -18,14 +26,9 @@ body {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.btn.btn-lg.btn-block.btn-#{provider} {
-    padding-top: 0px;
-    border-top-width: 0px;
-    padding-bottom: 0px;
-}
-
-.btn-block {
-  display: ;
+.input-group {
+    margin-bottom: 5px;
+    background-color: #87CEFA;
 }
 
 .addon-facebook {
@@ -59,7 +62,7 @@ body {
 }
 
 .field-devise {
-    margin-top: 75px;
+    margin-top: 60px;
 }
 
 .field-registration {
