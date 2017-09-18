@@ -13,7 +13,7 @@ class User < ApplicationRecord
       user = User.new(
         provider: auth.provider,
         uid:      auth.uid,
-        email:    auth.info.email ||= "#{auth.uid}-#{auth.provider}@example.com",
+        email:    "#{auth.uid}-#{auth.provider}@example.com",
         image_url:   auth.info.image,
         password: Devise.friendly_token[0, 20]
       )
@@ -43,12 +43,12 @@ class User < ApplicationRecord
     SecureRandom.uuid
   end
 
-  def update_with_password(params, options)
+  def update_with_password(params, *options)
     if provider.blank?
       super
     else
       params.delete :current_password
-      update_without_password(params, options)
+      update_without_password(params, *options)
     end
   end
 end

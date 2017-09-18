@@ -13,3 +13,6 @@
 <%- if devise_mapping.lockable? && resource_class.unlock_strategy_enabled?(:email) && controller_name != 'unlocks' %>
   <%= link_to "開封メールがまだ届きませんか?", new_unlock_path(resource_name) %><br />
 <% end -%>
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "ユーザー情報の変更", edit_user_registration_path(resource_name) %>
+<% end -%>
