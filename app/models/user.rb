@@ -1,8 +1,11 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  has_many :blogs
+  has_many :blogs, dependent: :destroy
   devise :database_authenticatable, :registerable,:recoverable, :rememberable, :trackable, :validatable, :confirmable, :omniauthable
+  has_many :comments, dependent: :destroy
+  has_many :relationships, foreign_key: "follower_id", dependent: :destroy
+  has_many :reverse_relationships, foreign_key: "followed_id", class_name: "Relationship", dependent: :destroy
 
   mount_uploader :avatar, AvatarUploader
 
@@ -11,6 +14,7 @@ class User < ApplicationRecord
 
     unless user
       user = User.new(
+        name:     auth.extra.raw_info.name,
         provider: auth.provider,
         uid:      auth.uid,
         email:    "#{auth.uid}-#{auth.provider}@example.com",
@@ -27,6 +31,7 @@ class User < ApplicationRecord
     user = User.find_by(provider: auth.provider, uid: auth.uid)
     unless user
       user = User.new(
+        name:     auth.info.nickname,
         image_url: auth.info.image,
         provider: auth.provider,
         uid:      auth.uid,
@@ -37,6 +42,18 @@ class User < ApplicationRecord
       user.save
     end
     user
+  end
+
+  def follow!(other_user)
+    relationships.create!(followed_id: other_user.id)
+  end
+
+  def following?(other_user)
+    relationships.find_by(followed_id: other_user.id)
+  end
+
+  def unfollow!(other_user)
+    relationships.find_by(followed_id: other_user.id).destroy
   end
 
   def self.create_unique_string

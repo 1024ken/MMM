@@ -1,7 +1,19 @@
 class BlogsController < ApplicationController
+
+  before_action :set_blog, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!
+
   def index
     @blogs = Blog.all
+    respond_to do |format|
+      format.html
+      format.js
+    end
+  end
+
+  def show
+    @comment = @blog.comments.build
+    @comments = @blog.comments
   end
 
   def new
@@ -14,6 +26,9 @@ class BlogsController < ApplicationController
 
   def create
     @blog = current_user.blogs.build(blogs_params)
+    if  params[:cache][:image].present?
+      @blog.image.retrieve_from_cache! params[:cache][:image]
+    end
     if @blog.save
       redirect_to blogs_path, notice: "ブログを作成しました！"
       NoticeMailer.sendmail_blog(@blog).deliver
@@ -48,6 +63,10 @@ class BlogsController < ApplicationController
 
   private
   def blogs_params
-    params.require(:blog).permit(:title, :content)
+    params.require(:blog).permit(:title, :content, :image)
+  end
+
+  def set_blog
+    @blog = Blog.find(params[:id])
   end
 end

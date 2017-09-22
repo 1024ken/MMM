@@ -1,21 +1,34 @@
 Rails.application.routes.draw do
 
+  root 'top#index'
+
+  resources :mmms
+
   resources :blogs, only:[:index, :new, :create, :edit, :update, :destroy] do
     collection do
       post :confirm
     end
   end
 
+  resources :users, only: [:index]
+
+  resource :relationships, only: [:create, :destroy]
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
+
+  resources :conversations do
+    resources :messages
   end
 
   devise_for :users, controllers: {
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-  resources :mmms
 
-  root 'top#index'
+  resources :blogs do
+    resources :comments
+    post :confirm, on: :collection
+  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

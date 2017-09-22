@@ -23,3 +23,10 @@
     width: 690px
     height: 640px;
 }
+
+.btn.btn-default.btn-lg.dropdown-toggle {
+    margin-left: 380px;
+    height: 45px;
+    margin-top: 5px;
+    background-color: #F0F8FF;
+}
