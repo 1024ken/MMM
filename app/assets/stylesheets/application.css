@@ -13,7 +13,12 @@
  *= require_tree .
  *= require_self
  */
-html {
+
+// Bootstrap Sass
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html,body {
   position: relative;
   min-height: 100%;
 }
@@ -53,11 +58,11 @@ header {
 
 footer {
   width: 100%;
-  height: 30px;
+  height: 50px;
   background-color: #EEFFFF;
   margin: auto;
   font-size: 12px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
 }
 

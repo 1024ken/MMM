@@ -3,13 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1 {
-  margin-top: 100px;
+    margin-top: 90px;
+}
+
+.row-blogs {
+    margin-top: 10px;
+    height: 320px;
+    margin-bottom: 20px;
+    background-color: #F0F8FF;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper.col-md-8.col-md-offset-2.col-sm-10 {
     margin-top: 150px;
 }
-
 
 .wrapper {
   margin-bottom: 74px;
@@ -27,6 +34,10 @@ input[type="submit"].btn-block{
 
 .container {
   padding-bottom: 85px;
+}
+
+.new_blog.new_blog {
+    margin-top: 30px;
 }
 
 .btn.btn-primary.btn-block-confirm {

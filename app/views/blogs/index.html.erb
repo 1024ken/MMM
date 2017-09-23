@@ -4,17 +4,17 @@
     <h1>投稿一覧</h1>
     <%= link_to "写真を投稿する", new_blog_path, class: 'btn btn-default' %>
     <% @blogs.each do |blog| %>
-      <div class="row">
+      <div class="row-blogs">
         <p><%= blog.user.name%></p>
-        <%= link_to blog_path(blog) do %>
-          <h4><%= blog.title %></h4>
-        <% end %>
+        <h4><%= blog.title %></h4>
         <div class="img src-picture">
-          <%= image_tag blog.image %>
+          <%= link_to blog_path(blog) do %>
+            <%= image_tag blog.image %>
+          <% end %>
         </div>
+        <p><%= blog.content %></p>
         <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-default btn-sm btn-primary' %>
         <%= link_to "削除", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
-        <p><%= blog.content %></p>
       </div>
     <% end %>
   </div>
