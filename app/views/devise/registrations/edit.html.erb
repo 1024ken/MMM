@@ -7,6 +7,10 @@
         <%= f.label :メールアドレス %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
+      <div class= "field-registration">
+        <%= f.label :名前 %><br />
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
       <% if @user.provider.blank? %>
         <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
           <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
@@ -28,7 +32,7 @@
           <%= f.password_field :current_password, autocomplete: "off", class: "form-control", placeholder: "現在のパスワード" %>
         </div>
       <% end %>
-      <div class="field img">
+      <div class="field-registration img">
         <%= profile_img(@user) if profile_img(@user) %>
         <%= f.file_field :avatar %>
         <%= f.hidden_field :avatar_cache %>

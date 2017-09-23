@@ -31,7 +31,7 @@ body {
 
 .wrapper.col-md-4.col-md-offset-4.col-sm-10.registration {
     margin-top: 100px;
-    height: 750px;
+    height: 810px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -141,4 +141,11 @@ a {
 .field-registration {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.field-registration.img {
+    width: 30%;
+    height: 45%;
+    margin-left: 120px;
+    margin-bottom: 0px;
 }

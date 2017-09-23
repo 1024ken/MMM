@@ -7,6 +7,10 @@
         <%= f.label :メールアドレス %><br />
         <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "メールアドレス" %>
       </div>
+      <div class= "field-registration">
+        <%= f.label :名前 %><br />
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
       <div class="field-sign-up">
         <%= f.label :パスワード %>
         <% if @minimum_password_length %>

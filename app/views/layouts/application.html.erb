@@ -28,7 +28,7 @@
         <ul class="dropdown-menu" role="menu">
           <li></li>
           <li><%= link_to "ユーザー情報の変更", edit_user_registration_path %></li>
-          <li><%= link_to 'ユーザー一覧', users_path if user_signed_in? %></li>
+          <li><%= link_to 'ユーザー', users_path if user_signed_in? %></li>
           <li><%= link_to "メッセージ", conversations_path %></li>
           <li class="divider"></li>
           <li><%= link_to "サインアウト", destroy_user_session_path, method: :delete %></li>
