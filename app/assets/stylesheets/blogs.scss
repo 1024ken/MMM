@@ -63,3 +63,35 @@ input[type="submit"].btn-block{
     margin-bottom: 3px;
   }
 }
+
+.left-comment {
+  font-size: 18px
+}
+
+.left {
+  margin-left: 10%;
+}
+
+.right {
+  margin-right: 41%;
+}
+
+.box24 {
+    position: relative;
+    padding: 0.5em 0.7em;
+    margin: 2em 0;
+    background: #e6f4ff;
+    border-radius: 2px;
+    color: #696969;
+    font-weight: bold;
+}
+.box24:after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid #e6f4ff;
+    width: 0;
+    height: 0;
+}

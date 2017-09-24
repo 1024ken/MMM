@@ -3,7 +3,7 @@ class RelationshipsController < ApplicationController
   respond_to :js
 
   def create
-    @user = User.find(params[:relatiuonship][:followed_id])
+    @user = User.find(params[:relationship][:followed_id])
     current_user.follow!(@user)
     respond_with @user
   end
