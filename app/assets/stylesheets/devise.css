@@ -8,36 +8,48 @@ body {
 
 .col-md-4.col-md-offset-4 {
     margin-top: 55px;
-    height: 715px;
+    height: 750px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .col-md-4.col-md-offset-4.all {
 	margin-top: 120px;
     height: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col-md-4.col-md-offset-4.pass.new {
   margin-top: 120px;
     height: 280px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .col-md-4.col-md-offset-4.pass.edit {
   margin-top: 120px;
     height: 420px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper.col-md-4.col-md-offset-4.col-sm-10.all {
 	margin-top: 100px;
     height: 600px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wrapper.col-md-4.col-md-offset-4.col-sm-10.registration {
     margin-top: 100px;
-    height: 810px;
+    height: 850px;
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -152,6 +164,11 @@ a {
 .field-registration.img {
     width: 30%;
     height: 45%;
-    margin-left: 120px;
+    margin-left: 36%;
     margin-bottom: 0px;
+}
+
+.field-registration.under {
+    width: 230px;
+    margin-left: -60%;
 }

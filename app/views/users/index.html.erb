@@ -2,8 +2,11 @@
   <h2>ユーザー一覧</h2>
   <% @users.each do |user| %>
     <div class="container-child col-md-2 col-sm-4 col-xs-6 users">
-      <div class= "inner">
-        <%= link_to profile_img(user), users_path(user.id) %>
+      <div class= "box30">
+        <div class="box-title">User</div>
+        <div class="box-img">
+          <%= link_to profile_img(user), users_path(user.id) %>
+        </div>
         <%= user.email %>
         <%= render partial: 'follow_form', locals: { user: user } if signed_in?%>
         <% if user.id != current_user.id %>

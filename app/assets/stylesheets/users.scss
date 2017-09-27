@@ -3,22 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container-users {
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .container-child.col-md-2.col-sm-4.col-xs-6.users {
-    height: 300px;
-    width: 200px;
+    margin-top: 25px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  .inner {
-    height: 170px;
-    width: 170px;
-    margin-top: 10px;
+    margin-left: 100px;
+.box30 {
+    height: 220px;
+    margin: 1em 1em;
+    margin-left: 3px;
+    margin-right: 3px;
+    background: #F0F8FF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
   }
+.box30 .box-title {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-family: "ＭＳ P明朝",serif;
+    background: #5fc2f5;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
+}
+
+.box-img {
+    width: 100%;
+}
+
+.item {
+    width: 100px;
+    margin-left: 25%;
 }
