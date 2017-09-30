@@ -1,0 +1,39 @@
+// Place all the styles related to the likes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.star {
+  width: 30%;
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+}
+
+.star-rating-front {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-decoration: none;
+  font-size: 30px;
+  color: #ffcc33;
+}
+
+.star-rating-front:hover {
+  text-decoration: none;
+}
+
+.star-rating-back {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.star-rating-back:hover {
+  text-decoration: none;
+}

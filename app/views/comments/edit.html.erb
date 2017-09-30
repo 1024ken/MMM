@@ -1,6 +1,24 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 comment">
     <h2>コメントを編集する</h2>
-    <%= render partial: 'form', locals: { comment: @comment, blog: @blog } %>
+    <% if @comment.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= @comment.errors.count %>件のエラーがあります。</h2>
+        <ul>
+          <% @comment.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+    <%= form_for([@blog,@comment]) do |f| %>
+      <%= f.hidden_field :blog_id %>
+      <div class="field">
+        <%= f.text_field :content, placeholder: "コメント", class: "form-control"  %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
   </div>
 </div>

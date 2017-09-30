@@ -8,7 +8,7 @@
 
 .row-blogs {
     margin-top: 10px;
-    height: 350px;
+    height: 340px;
     margin-bottom: 20px;
     background-color: #F0F8FF;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -40,28 +40,19 @@ input[type="submit"].btn-block{
     margin-top: 30px;
 }
 
+.blog.buttun {
+    margin-top: -40px;
+}
+
 .btn.btn-primary.btn-block-confirm {
     width: 126px;
 }
 
 .img.src-picture {
+    width: 45%;
+    height: 55%;
+    margin-left: 27%;
     margin-top: 5px;
-}
-
-.picture {
-    width: 200px;
-    height: 150px;
-    margin-bottom: 10px;
-  img {
-    width: 55%;
-  }
-  .picture.buttun {
-    width: 150px;
-    height: 30px;
-    padding-left: 15px;
-    padding-top: 2px;
-    margin-bottom: 3px;
-  }
 }
 
 .left-comment {
@@ -94,4 +85,33 @@ input[type="submit"].btn-block{
     border-top: 15px solid #e6f4ff;
     width: 0;
     height: 0;
+}
+
+.box23 {
+position: relative;
+width: 130px;
+padding: 8px 15px;
+background: #e4fcff;
+border-radius: 30px;
+}
+.box23:before{font-family: FontAwesome;
+content: "\f111";
+position: absolute;
+font-size: 15px;
+right: -26px;
+top: 65px;
+color: #e4fcff;
+}
+.box23:after{
+font-family: FontAwesome;
+content: "\f111";
+position: absolute;
+font-size: 23px;
+right: -16px;
+bottom: 0;
+color: #e4fcff;
+}
+.box23 p {
+margin: 0;
+padding: 0;
 }

@@ -21,7 +21,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     respond_to do |format|
       if @comment.update(comment_params)
-        format.html {redirect_to blog_path, notice: "コメントを更新しました！"}
+        format.html {redirect_to blogs_path, notice: "コメントを更新しました！"}
         format.js {render :index}
       else
         format.html {render :index}

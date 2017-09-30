@@ -10,7 +10,13 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :users, only: [:index]
+  resources :users, only: [:index] do
+  end
+
+  post   '/like/:blog_id' => 'likes#like',   as: 'like'
+  delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'
+
+  root 'tweets#index'
 
   resource :relationships, only: [:create, :destroy]
   if Rails.env.development?

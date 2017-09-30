@@ -80,3 +80,11 @@ body {
   color: #000000;
   padding-top: 100px;
 }
+
+.actions {
+  font-size: 15px;
+  background-color: #fff;
+  margin-left: 39%;
+  width: 86px;
+  height: 29px;
+}
