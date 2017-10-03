@@ -460,7 +460,43 @@ a {
   font-family: "ＭＳ P明朝",serif;
 }
 
-h2 {
+li {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+h1 {
+  font-family: "ＭＳ P明朝",serif;
+  color: #364e96;
+  padding: 0.5em 0;
+  border-top: solid 3px #0000FF;
+  border-bottom: solid 3px #0000FF;
+}
+
+h3 {
+  font-family: "ＭＳ P明朝",serif;
+  font-size: 25px;
+  color: #000080;
+  width: 350px;
+  margin: auto;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px #0000FF;
+  border-bottom: solid 2px #0000FF;
+}
+h3:before, h3:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: #0000FF;
+}
+h3:before {left: 7px;}
+h3:after {right: 7px;}
+}
+
+form-control {
   font-family: "ＭＳ P明朝",serif;
 }
 

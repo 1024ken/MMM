@@ -2,13 +2,36 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1 {
-    margin-top: 90px;
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1-blog{
+  margin-top: 80px;
+}
+
+.square_btn {
+    width: 172px;
+    height: 37px;
+    margin-top: 10px;
+    padding-top: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+display: inline-block;
+text-decoration: none;
+color: #67c5ff;
+border: solid 2px #67c5ff;
+border-radius: 3px;
+transition: .4s;
+}
+.square_btn:hover {
+background: #67c5ff;
+text-decoration: none;
+color: white;
 }
 
 .row-blogs {
     margin-top: 10px;
-    height: 340px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    height: 100%;
     margin-bottom: 20px;
     background-color: #F0F8FF;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -41,7 +64,9 @@ input[type="submit"].btn-block{
 }
 
 .blog.buttun {
-    margin-top: -40px;
+    margin-top: -7%;
+    padding-top: 10px;
+    padding-bottom: 5px;
 }
 
 .btn.btn-primary.btn-block-confirm {
@@ -49,10 +74,11 @@ input[type="submit"].btn-block{
 }
 
 .img.src-picture {
-    width: 45%;
-    height: 55%;
-    margin-left: 27%;
+    width: 76%;
+    height: 54%;
+    margin-left: 12%;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .left-comment {
@@ -114,4 +140,13 @@ color: #e4fcff;
 .box23 p {
 margin: 0;
 padding: 0;
+}
+
+.comment.actions {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+  margin-left: 39%;
+  width: 86px;
+  height: 29px;
 }

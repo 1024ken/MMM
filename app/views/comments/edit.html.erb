@@ -1,6 +1,6 @@
-<div class="container">
-  <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 comment">
-    <h2>コメントを編集する</h2>
+<div class="container-comment">
+  <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1-comment">
+    <h1>コメントを編集する</h1>
     <% if @comment.errors.any? %>
       <div id="error_explanation">
         <h2><%= @comment.errors.count %>件のエラーがあります。</h2>
@@ -14,10 +14,10 @@
     <%= form_for([@blog,@comment]) do |f| %>
       <%= f.hidden_field :blog_id %>
       <div class="field">
-        <%= f.text_field :content, placeholder: "コメント", class: "form-control"  %>
+        <%= f.text_field :content, placeholder: "コメント", class: "form-control" %>
       </div>
-      <div class="actions">
-        <%= f.submit %>
+      <div class="actions edit">
+        <%= f.submit "更新", class: "btn btn-default btn-sm btn-primary comment"%>
       </div>
     <% end %>
   </div>

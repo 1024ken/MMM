@@ -2,6 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.container-comment {
+  margin-top: 200px;
+}
+
+col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1-comment {
+    margin-top: 120px;
+}
+
 ul{
   padding: 0;
 }
@@ -12,10 +20,17 @@ ul{
   list-style-type: none;
 }
 
-.right {
-text-align: right;
+.right-comment {
+text-align: center;
 }
 
 .left {
 text-align: left;
+}
+
+.actions.edit {
+}
+.btn.btn-default.btn-sm.btn-primary.comment {
+    width: 172px;
+    height: 30px;
 }

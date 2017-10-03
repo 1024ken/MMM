@@ -3,23 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container-users {
-    margin-top: 120px;
+    margin-top: 105px;
 }
 
 .container-child.col-md-2.col-sm-4.col-xs-6.users {
-    margin-top: 25px;
+    margin-top: 12px;
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-left: 100px;
+    margin-bottom: 70px;
 .box30 {
-    height: 220px;
+    height: 100%;
+    width: 100%;
     margin: 1em 1em;
     margin-left: 3px;
     margin-right: 3px;
     background: #F0F8FF;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
-  }
-.box30 .box-title {
+}
+
+.box-title {
     margin-top: 10px;
+    margin-bottom: 5px;
     font-size: 1.2em;
     font-family: "ＭＳ P明朝",serif;
     background: #5fc2f5;
@@ -31,12 +35,23 @@
   }
 }
 
+.box-email {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "ＭＳ P明朝",serif;
+}
+
 .box-img {
-    width: 40%;
-    margin-left: 30%;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .item {
-    width: 130px;
-    margin-left: 18%;
+    margin-left: 5%;
+    padding-bottom: 5px;
+}
+
+.btn.btn-large.btn-primary.user {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }

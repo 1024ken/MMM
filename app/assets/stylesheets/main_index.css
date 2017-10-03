@@ -9,10 +9,10 @@
 }
 
 .col-md-6.portfolio-item {
-    margin-top: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-bottom: 8px;
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 5px;
 }
 
 .box{
@@ -25,9 +25,9 @@
 }
 
 .btn-group {
-    margin-right: 70%;
+    margin-right: 64%;
     height: 45px;
-    margin-top: -75px;
+    margin-top: -73px;
     background-color: #F0F8FF;
 }
 
@@ -41,4 +41,8 @@
 .btn.btn-default.dropdown-toggle {
 	height: 45px;
     background-color: #F0F8FF;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 5px 0px;
 }

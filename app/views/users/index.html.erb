@@ -1,5 +1,5 @@
 <div class="container-users">
-  <h2>ユーザー一覧</h2>
+  <h3>ユーザー一覧</h3>
   <% @users.each do |user| %>
     <div class="container-child col-md-2 col-sm-4 col-xs-6 users">
       <div class= "box30">
@@ -7,7 +7,9 @@
         <div class="box-img">
           <%= link_to profile_img(user), users_path(user.id) %>
         </div>
-        <%= user.email %>
+        <div class=box-email>
+          <%= user.email %>
+        </div>
         <%= render partial: 'follow_form', locals: { user: user } if signed_in?%>
         <% if user.id != current_user.id %>
           <div class="item">
