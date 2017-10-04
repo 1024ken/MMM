@@ -94,3 +94,33 @@ body {
     height: 27px;
     width: 92px;
 }
+
+ol.topic-path {
+margin-left: 1000px;
+padding: 17px 0px;
+list-style-type: none;
+font-size: 100%;
+}
+
+ol.topic-path li {
+padding-left: 5px;
+display: inline;
+}
+
+ol.topic-path li.first {
+padding-left: 25px;
+background: url(../image/topic-path-home-gray.png) no-repeat left;
+}
+
+ol.topic-path li a {
+padding-right: 18px;
+background: url(../image/topic-path-gray.gif) no-repeat right;
+}
+
+ol.topic-path li a {
+color: #00008B;
+}
+
+ol.topic-path li a:hover {
+color: #00008B;
+}

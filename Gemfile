@@ -57,6 +57,9 @@ gem 'jquery-rails'
 gem 'webpacker', github: 'rails/webpacker'
 gem 'rails_12factor', group: :production
 gem 'pusher'
+gem 'gretel'
+gem 'elasticsearch-rails'
+gem 'elasticsearch-model'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

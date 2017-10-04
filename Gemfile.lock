@@ -140,6 +140,19 @@ GEM
     dotenv-rails (2.2.1)
       dotenv (= 2.2.1)
       railties (>= 3.2, < 5.2)
+    elasticsearch (5.0.4)
+      elasticsearch-api (= 5.0.4)
+      elasticsearch-transport (= 5.0.4)
+    elasticsearch-api (5.0.4)
+      multi_json
+    elasticsearch-model (5.0.1)
+      activesupport (> 3)
+      elasticsearch (~> 5)
+      hashie
+    elasticsearch-rails (5.0.1)
+    elasticsearch-transport (5.0.4)
+      faraday
+      multi_json
     erubi (1.6.1)
     execjs (2.7.0)
     faraday (0.12.2)
@@ -150,6 +163,8 @@ GEM
     formtastic_i18n (0.6.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
+    gretel (3.0.9)
+      rails (>= 3.1.0)
     has_scope (0.7.1)
       actionpack (>= 4.1, < 5.2)
       activesupport (>= 4.1, < 5.2)
@@ -400,6 +415,9 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   dotenv-rails
+  elasticsearch-model
+  elasticsearch-rails
+  gretel
   inherited_resources!
   jbuilder (~> 2.5)
   jquery-rails

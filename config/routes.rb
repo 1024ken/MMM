@@ -16,8 +16,6 @@ Rails.application.routes.draw do
   post   '/like/:blog_id' => 'likes#like',   as: 'like'
   delete '/like/:blog_id' => 'likes#unlike', as: 'unlike'
 
-  root 'tweets#index'
-
   resource :relationships, only: [:create, :destroy]
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener"
