@@ -4,8 +4,8 @@ class MmmsController < InheritedResources::Base
   def index
     redirect_to new_user_session_path unless current_user
   end
-  private
 
+  private
   def mmm_params
     params.require(:mmm).permit(:title, :content)
   end

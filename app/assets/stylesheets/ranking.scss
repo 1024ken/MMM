@@ -1,3 +1,45 @@
-// Place all the styles related to the ranking controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1.ranking {
+    margin-top: 120px;
+}
+
+.row-ranking {
+    margin-top: 25px;
+    padding-left: 65px;
+    padding-top: 5px;
+    padding-right: 65px;
+    padding-bottom: 15px;
+    height: 100%;
+    margin-bottom: 20px;
+    background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px,#e9f4ff 3px, #e9f4ff 7px);
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  hover {
+    text-decoration: none;
+  }
+}
+
+.ranking-rank {
+    margin-left: -40%;
+    color: #FF00FF;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 3px;
+}
+
+.ranking-user {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.ranking-title {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.ranking-image {
+  padding: 2px;
+  margin-bottom: 40px;
+  border: double 4px #1E90FF;
+}

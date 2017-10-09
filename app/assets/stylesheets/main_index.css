@@ -26,7 +26,7 @@
 
 .btn-group {
     margin-right: 64%;
-    height: 45px;
+    height: 40px;
     margin-top: -73px;
     background-color: #F0F8FF;
 }
@@ -36,11 +36,29 @@
 	height: 45px;
 	background-color: #F0F8FF;
     border-color: #ccc;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-bottom: solid 4px #C0C0C0;
+    border-radius: 5px;
+}
+.btn-group:active { -ms-transform: translateY(4px);
+-webkit-transform: translateY(4px);
+transform: translateY(4px); box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); border-bottom: none;
 }
 
 .btn.btn-default.dropdown-toggle {
+    font-family: "ＭＳ P明朝",serif;
 	height: 45px;
     background-color: #F0F8FF;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid 4px #C0C0C0;
+    border-radius: 5px;
+}
+.btn-group:active { -ms-transform: translateY(4px);
+-webkit-transform: translateY(4px);
+transform: translateY(4px); box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); border-bottom: none;
 }
 
 .btn-lg, .btn-group-lg>.btn {

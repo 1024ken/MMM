@@ -2,11 +2,13 @@ Rails.application.routes.draw do
 
   root 'top#index'
 
-  resources :mmms
+  resources :mmms, only:[:index]
 
   resources :blogs, only:[:index, :new, :create, :edit, :update, :destroy] do
+    resources :comments
     collection do
       post :confirm
+      get :top5
     end
   end
 
@@ -29,13 +31,5 @@ Rails.application.routes.draw do
     registrations: "users/registrations",
     omniauth_callbacks: "users/omniauth_callbacks"
   }
-
-  resources :blogs do
-    resources :comments
-    post :confirm, on: :collection
-  end
-
-  resources :rankings do
-  end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

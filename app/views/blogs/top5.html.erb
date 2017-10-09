@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 ranking">
+    <h3>いいね！ランキング</h3>
+    <div class="row-ranking">
+      <% @blogs.each do |blog| %>
+        <div class="ranking-rank">
+          <strong><%= blog.rank %></strong>
+          <a>位</a>
+        </div>
+        <div class="ranking-user">
+          <td><%= blog.user.name %></td>
+        </div>
+        <div class="ranking-title">
+          <td><%= blog.title %></td>
+        </div>
+        <div class="ranking-image">
+          <%= link_to blogs_path do %>
+            <%= image_tag blog.image %>
+          <% end %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -13,21 +13,23 @@
         <p><%= blog.user.name%></p>
         <h4><%= blog.title %></h4>
         <div class="img src-picture">
-          <%#= link_to blog_path(blog) do %>
+          <%= link_to top5_blogs_path do %>
             <%= image_tag blog.image %>
-            <%# end %>
-          </div>
-          <p><%= blog.content %></p>
-          <%= render 'likes/like', blog: blog %>
-          <div class="blog buttun">
+          <% end %>
+        </div>
+        <p><%= blog.content %></p>
+        <%= render 'likes/like', blog: blog %>
+        <div class="blog buttun">
+          <% if current_user == blog.user %>
             <%= link_to "編集", edit_blog_path(blog.id), class: 'btn btn-default btn-sm btn-primary' %>
             <%= link_to "削除", blog_path(blog.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn btn-danger' %>
-          </div>
+          <% end %>
         </div>
-        <div id="comments_area<%= blog.id %>">
-          <%= render partial: 'comments/index', locals: { comments: blog.comments, blog: blog } %>
-        </div>
-        <%= render partial: 'comments/form', locals: { comment: blog.comments.build, blog: blog } %>
-      <% end %>
-    </div>
+      </div>
+      <div id="comments_area<%= blog.id %>">
+        <%= render partial: 'comments/index', locals: { comments: blog.comments, blog: blog } %>
+      </div>
+      <%= render partial: 'comments/form', locals: { comment: blog.comments.build, blog: blog } %>
+    <% end %>
   </div>
+</div>
