@@ -1,13 +1,19 @@
 <div class="container">
   <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1">
-    <h3>以下の内容で、送信する。</h3>
+    <h1>以下の内容で、送信する。</h1>
     <%= form_for(@blog) do |f| %>
       <%= f.hidden_field :title %>
       <%= f.hidden_field :content %>
-      <p>タイトル:<%= @blog.title %></p>
-      <%= image_tag(@blog.image) %>
+      <div class="title-confirm">
+        <p>タイトル:<%= @blog.title %></p>
+      </div>
+      <div class="image-confirm">
+        <%= image_tag(@blog.image) %>
+      </div>
       <%= hidden_field_tag :"cache[image]", @blog.image.cache_name %>
-      <p>説明:<%= @blog.content %></p>
+      <div class="content-confirm">
+        <p>説明:<%= @blog.content %></p>
+      </div>
       <%= f.submit "登録", class: "btn btn-primary btn-block-confirm" %>
     <% end %>
     <%= form_for(@blog, url: new_blog_path, method: 'get') do |f| %>

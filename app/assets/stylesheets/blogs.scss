@@ -6,6 +6,10 @@
   margin-top: 80px;
 }
 
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1 {
+  margin-top: 140px;
+}
+
 .square_btn {
     width: 172px;
     height: 37px;
@@ -149,4 +153,34 @@ padding: 0;
   margin-left: 39%;
   width: 86px;
   height: 29px;
+}
+
+.title-confirm {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-buttom: 5px;
+  color: #474747;
+  background: #f0f7ff;/*背景色*/ border-left: double 7px #5b8bd0;/*左線*/ border-right: double 7px #5b8bd0;/*右線*/ }
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+
+.content-confirm{
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-buttom: 5px;
+  color: #474747;
+  background: #f0f7ff;/*背景色*/ border-left: double 7px #5b8bd0;/*左線*/ border-right: double 7px #5b8bd0;/*右線*/ }
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+
+.image-confirm {
+  width: 80%;
+  height: 80%;
+  margin-left: 12%;
 }
