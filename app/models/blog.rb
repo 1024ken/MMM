@@ -6,16 +6,21 @@ class Blog < ApplicationRecord
   mount_uploader :image, ImageUploader
   validates :title, :content, presence: true
 
+  scope :spring, -> { where(season: "spring") }
+  scope :summer, -> { where(season: "summer") }
+  scope :autumn, -> { where(season: "autumn") }
+  scope :winter, -> { where(season: "winter") }
+
   def self.search(season)
     case season
     when 1 then
-      Blog.where(season: "spring")
+      spring
     when 2 then
-      Blog.where(season: "summer")
+      summer
     when 3 then
-      Blog.where(season: "autumn")
+      autumn
     when 4 then
-      Blog.where(season: "winter")
+      winter
     else
       redirect_to new_user_session_path, notice: "ログイン画面に戻りました！"
     end
