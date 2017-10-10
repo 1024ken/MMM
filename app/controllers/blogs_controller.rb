@@ -5,7 +5,8 @@ class BlogsController < ApplicationController
   before_action :compare_current_user_blog_user, only: [:edit, :update, :destroy]
 
   def index
-    @blogs = Blog.all
+    season = params[:season].to_i
+    @blogs = Blog.search(season)
     respond_to do |format|
       format.html
       format.js
@@ -69,23 +70,6 @@ class BlogsController < ApplicationController
       format.json { render json: @blogs }
     end
   end
-
-  # Season = params[:season]
-
-  # case season
-
-  # when 1 then
-  #   Blog.where(blogs.season:1)
-  # when 2 then
-  #   Blog.where()
-  # when 3 then
-  #   Blog.where()
-  # when 4 then
-  #   Blog.where()
-  # else
-  #   redirect_to new_user_session_path, notice: "ログイン画面に戻りました！"
-  # end
-
 
   private
   def blogs_params

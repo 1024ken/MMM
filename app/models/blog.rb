@@ -6,6 +6,21 @@ class Blog < ApplicationRecord
   mount_uploader :image, ImageUploader
   validates :title, :content, presence: true
 
+  def self.search(season)
+    case season
+    when 1 then
+      Blog.where(season: "spring")
+    when 2 then
+      Blog.where(season: "summer")
+    when 3 then
+      Blog.where(season: "autumn")
+    when 4 then
+      Blog.where(season: "winter")
+    else
+      redirect_to new_user_session_path, notice: "ログイン画面に戻りました！"
+    end
+  end
+
   def rank
     ranking = Blog.all.collect do |blog|
       blog.likes.count
