@@ -12,6 +12,7 @@
   <%= f.label :タイトル %>
   <%= f.text_field :title, class: 'form-control' %>
   <br>
+  <%= f.hidden_field :season, value: @season %>
   <div class="field-blog">
     <%= f.file_field :image %>
     <%= f.label :説明 %>

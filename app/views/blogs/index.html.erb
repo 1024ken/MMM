@@ -3,7 +3,7 @@
     <p><%= notice %></p>
     <div class=blog main>
       <h3>投稿一覧</h3>
-      <%= link_to "写真を投稿する", new_blog_path, class: 'square_btn' %>
+      <%= link_to "写真を投稿する", new_blog_path(@season), class: 'square_btn' %>
     </div>
     <% @blogs.each do |blog| %>
       <div class="box23">

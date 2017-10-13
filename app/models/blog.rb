@@ -22,7 +22,7 @@ class Blog < ApplicationRecord
     when 4 then
       winter
     else
-      redirect_to new_user_session_path, notice: "ログイン画面に戻りました！"
+      false
     end
   end
 
