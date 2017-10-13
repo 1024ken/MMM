@@ -37,7 +37,6 @@ class BlogsController < ApplicationController
     if @blog.save
       session[:season] = @blog.season
       redirect_to blogs_path(season: @season), notice: "ブログを作成しました！"
-      # redirect_to root_path
       NoticeMailer.sendmail_blog(@blog).deliver
     else
       render 'new'
@@ -83,7 +82,6 @@ class BlogsController < ApplicationController
     # convert_season_str(params[:blog][:season])
     season = convert_season_str(params[:blog][:season])
     params[:blog][:season] = season
-    # binding.pry
     params.require(:blog).permit(:title, :content, :image, :season)
   end
 
