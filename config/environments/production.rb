@@ -87,7 +87,7 @@ Rails.application.configure do
   end
 
   # Do not dump schema after migrations.
-  config.action_mailer.default_url_options = { host: 'https://mmm-seasons.herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'https://mmm-season.herokuapp.com/' }
   config.active_record.dump_schema_after_migration = false
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings =
