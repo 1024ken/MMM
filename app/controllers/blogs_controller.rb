@@ -31,7 +31,7 @@ class BlogsController < ApplicationController
   def create
     @season = params[:blog][:season].to_i
     @blog = current_user.blogs.build(blogs_params)
-    if  params[:cache][:image].present?
+    if params[:cache][:image].present?
       @blog.image.retrieve_from_cache! params[:cache][:image]
     end
     if @blog.save
@@ -49,8 +49,22 @@ class BlogsController < ApplicationController
 
   def update
     @blog = Blog.find(params[:id])
-    if @blog.update(blogs_params)
-      redirect_to blogs_path, notice: "ブログを更新しました！"
+    season = @blog.season
+    case season
+    when "spring" then
+      @season = 1
+    when "summer" then
+      2
+    when "autumn" then
+      3
+    when "winter" then
+      4
+    else
+      false
+    end
+    if @blog.update(update_blogs_params)
+      session[:season] = @blog.season
+      redirect_to blogs_path(season: @season), notice: "ブログを更新しました！"
     else
       render 'edit'
     end
@@ -66,7 +80,7 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id])
     @blog.destroy
     @_current_user = session[:season] = nil
-    redirect_to blogs_path, notice: "ブログを削除しました！"
+    redirect_to blogs_path(season: @season), notice: "ブログを削除しました！"
   end
 
   def top5
@@ -79,10 +93,13 @@ class BlogsController < ApplicationController
 
   private
   def blogs_params
-    # convert_season_str(params[:blog][:season])
     season = convert_season_str(params[:blog][:season])
     params[:blog][:season] = season
     params.require(:blog).permit(:title, :content, :image, :season)
+  end
+
+  def update_blogs_params
+    params.require(:blog).permit(:title, :content, :image)
   end
 
   def set_blog
@@ -104,7 +121,6 @@ class BlogsController < ApplicationController
       false
     end
   end
-
 
   # def compare_current_user_blog_user
   #   unless current_user == user.id
