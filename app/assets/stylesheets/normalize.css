@@ -460,12 +460,20 @@ li {
   font-family: "ＭＳ P明朝",serif;
 }
 
+em {
+  font-family: "ＭＳ P明朝",serif;
+}
+
 h1 {
   font-family: "ＭＳ P明朝",serif;
   color: #364e96;
   padding: 0.5em 0;
   border-top: solid 3px #0000FF;
   border-bottom: solid 3px #0000FF;
+}
+
+h2 {
+  font-family: "ＭＳ P明朝",serif;
 }
 
 h3 {
