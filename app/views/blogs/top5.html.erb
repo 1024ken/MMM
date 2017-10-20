@@ -6,6 +6,10 @@
         <div class="ranking-rank">
           <strong><%= blog.rank %></strong>
           <a>位</a>
+          <div class="ranking-count">
+            <strong><%= blog.likes.count %></strong>
+            <a>いいね🌟</a>
+          </div>
         </div>
         <div class="ranking-user">
           <td><%= blog.user.name %></td>
