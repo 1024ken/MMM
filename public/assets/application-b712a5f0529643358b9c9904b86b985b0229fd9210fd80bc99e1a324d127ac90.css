@@ -1,9 +1,244 @@
+@charset "UTF-8";
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1-blog {
+  margin-top: 80px;
+}
+
+/* line 9, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1 {
+  margin-top: 140px;
+}
+
+/* line 13, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.square_btn {
+  width: 172px;
+  height: 37px;
+  margin-top: 10px;
+  padding-top: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #67c5ff;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+/* line 28, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.square_btn:hover {
+  background: #67c5ff;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 34, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.row-blogs {
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  height: 100%;
+  margin-bottom: 20px;
+  background-color: #F0F8FF;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 44, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.wrapper.col-md-8.col-md-offset-2.col-sm-10 {
+  margin-top: 150px;
+}
+
+/* line 48, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.wrapper {
+  margin-bottom: 74px;
+  padding: 20px 20px 20px 35px;
+}
+/* line 51, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.wrapper .row {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/* line 58, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+input[type="submit"].btn-block {
+  margin: 15px 0;
+}
+
+/* line 62, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.container {
+  padding-bottom: 85px;
+}
+
+/* line 66, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.new_blog.new_blog {
+  margin-top: 30px;
+}
+
+/* line 70, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.blog.buttun {
+  margin-top: -6%;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+/* line 77, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.btn.btn-primary.btn-block-confirm {
+  width: 126px;
+}
+
+/* line 81, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.img.src-picture {
+  width: 76%;
+  height: 54%;
+  margin-left: 12%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* line 89, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.left-comment {
+  font-size: 18px;
+}
+
+/* line 93, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.left {
+  margin-left: 10%;
+}
+
+/* line 97, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.right {
+  margin-right: 41%;
+}
+
+/* line 101, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box24 {
+  position: relative;
+  padding: 0.5em 0.7em;
+  margin: 2em 0;
+  background: #e6f4ff;
+  border-radius: 2px;
+  color: #696969;
+  font-weight: bold;
+}
+
+/* line 110, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box24:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 30px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e6f4ff;
+  width: 0;
+  height: 0;
+}
+
+/* line 121, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box23 {
+  position: relative;
+  width: 130px;
+  padding: 8px 15px;
+  background: #e4fcff;
+  border-radius: 30px;
+}
+
+/* line 128, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box23:before {
+  font-family: FontAwesome;
+  content: "\f111";
+  position: absolute;
+  font-size: 15px;
+  right: -26px;
+  top: 65px;
+  color: #e4fcff;
+}
+
+/* line 136, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box23:after {
+  font-family: FontAwesome;
+  content: "\f111";
+  position: absolute;
+  font-size: 23px;
+  right: -16px;
+  bottom: 0;
+  color: #e4fcff;
+}
+
+/* line 145, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box23 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 150, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.comment.actions {
+  font-size: 15px;
+  margin-top: 10px;
+  background-color: #fff;
+  margin-left: 39%;
+  width: 86px;
+  height: 29px;
+}
+
+/* line 159, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.title-confirm {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-buttom: 5px;
+  color: #474747;
+  background: #f0f7ff;
+  /*背景色*/
+  border-left: double 7px #5b8bd0;
+  /*左線*/
+  border-right: double 7px #5b8bd0;
+  /*右線*/
+}
+
+/* line 166, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 171, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.content-confirm {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-buttom: 5px;
+  color: #474747;
+  background: #f0f7ff;
+  /*背景色*/
+  border-left: double 7px #5b8bd0;
+  /*左線*/
+  border-right: double 7px #5b8bd0;
+  /*右線*/
+}
+
+/* line 178, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.box7 p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 183, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/blogs.scss */
+.image-confirm {
+  width: 80%;
+  height: 80%;
+  margin-left: 12%;
+}
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -6743,3 +6978,1247 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+.container-comment {
+  margin-top: 200px;
+}
+
+/* line 9, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1-comment {
+  margin-top: 120px;
+}
+
+/* line 13, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+ul {
+  padding: 0;
+}
+
+/* line 17, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+.child li {
+  padding-top: 13px;
+  border-bottom: 1px dotted #ccc;
+  list-style-type: none;
+}
+
+/* line 23, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+.right-comment {
+  text-align: center;
+}
+
+/* line 27, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+.left {
+  text-align: left;
+}
+
+/* line 33, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/comments.scss */
+.btn.btn-default.btn-sm.btn-primary.comment {
+  width: 172px;
+  height: 30px;
+}
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css);
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+/* line 4, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+body {
+  background-color: #f0f3f5;
+  font-family: 'Roboto';
+}
+
+/* line 9, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.col-md-4.col-md-offset-4 {
+  margin-top: 85px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* line 16, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.col-md-4.col-md-offset-4.all {
+  margin-top: 200px;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 26, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.col-md-4.col-md-offset-4.pass.new {
+  margin-top: 200px;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 36, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.col-md-4.col-md-offset-4.pass.edit {
+  margin-top: 120px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 44, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.wrapper.col-md-4.col-md-offset-4.col-sm-10.all {
+  margin-top: 100px;
+  height: 100%;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 53, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.wrapper.col-md-4.col-md-offset-4.col-sm-10.registration {
+  margin-top: 100px;
+  height: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 61, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.box {
+  background-color: #fff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding: 10px 40px;
+  margin-top: 30px;
+  /*Remove, its example*/
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* line 70, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.container-fluid.confirmation {
+  margin-bottom: 333px;
+}
+
+/* line 74, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.container-fluid.password {
+  margin-bottom: 338px;
+}
+
+/* line 78, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.input-group {
+  margin-bottom: 5px;
+  background-color: #87CEFA;
+}
+
+/* line 83, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.addon-facebook {
+  background-color: #345387;
+  border: none;
+  border-radius: 2px 0px 0px 2px;
+  color: #fff;
+}
+
+/* line 90, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn-facebook {
+  border-radius: 0px 0px 0px 0px;
+  font-size: 18px;
+}
+/* line 93, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn-facebook .btn-facebook:hover {
+  background-color: #F0F8FF;
+  color: #fff;
+  border-radius: 0px 2px 2px 0px;
+  font-size: 15px;
+}
+
+/* line 101, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.addon-twitter {
+  background-color: #00c6e9;
+  border: none;
+  border-radius: 2px 0px 0px 2px;
+  color: #fff;
+}
+
+/* line 108, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn-twitter {
+  border-radius: 0px 0px 0px 0px;
+  font-size: 18px;
+}
+/* line 111, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn-twitter .btn-twitter:hover {
+  background-color: #F0F8FF;
+  color: #fff;
+  border-radius: 0px;
+  font-size: 15px;
+}
+
+/* line 119, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-devise {
+  margin-top: 25px;
+}
+
+/* line 123, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-registration {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* line 128, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn-primary {
+  border-radius: 2px;
+  background-color: #23a9f6;
+  border-color: #23a9f6;
+  margin: 10px 0px;
+}
+
+/* line 135, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+a {
+  color: #23a9f6;
+}
+
+/* line 139, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.divider-form {
+  border: 1px solid #EBEFF1;
+  margin: 15px -40px 10px;
+}
+
+/* line 144, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.label {
+  margin-bottom: 0;
+}
+
+/* line 148, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.form-control {
+  font-color: #fff;
+  background: none;
+  height: 35px;
+  border-radius: 0px;
+  box-shadow: none;
+  color: #8b9eb6;
+  box-shadow: none;
+}
+
+/* line 158, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.autofocus.email {
+  width: 330px;
+  height: 36px;
+}
+
+/* line 163, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-sign-up {
+  margin-top: 15px;
+}
+
+/* line 167, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field.img {
+  width: 150px;
+  height: 105px;
+  margin-left: 95px;
+}
+
+/* line 173, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-registration {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 178, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-registration.img {
+  width: 30%;
+  height: 45%;
+  margin-left: 36%;
+  margin-bottom: 0px;
+}
+
+/* line 185, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.field-registration.under {
+  width: 230px;
+  margin-left: -60%;
+}
+
+/* line 190, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.actions.comfirmation {
+  color: #000000;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #1E90FF;
+}
+
+/* line 197, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.btn.btn-default.btn-sm.btn.btn-danger-delete {
+  width: 222px;
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+/* line 204, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.password.main {
+  padding-top: 1px;
+}
+
+/* line 208, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/devise.scss */
+.password.under {
+  padding-bottom: 10px;
+}
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star {
+  width: 25%;
+  margin-left: 6%;
+}
+
+/* line 10, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+}
+
+/* line 17, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-front {
+  margin: -12px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 21px solid #f2c820;
+  display: block;
+  height: 0;
+  width: 0;
+  position: relative;
+  animation: anim-star-fav-rotate 10s linear infinite, anim-star-fav-opacity 1s linear infinite;
+}
+
+/* line 31, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-front:before,
+.star-rating-front:after {
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 21px solid #f2c820;
+  content: '';
+  display: block;
+  height: 0;
+  left: -31px;
+  position: absolute;
+  top: 0;
+  width: 0;
+}
+
+/* line 44, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-front:before {
+  transform: rotate(71deg);
+}
+
+/* line 47, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-front:after {
+  transform: rotate(-71deg);
+}
+
+@keyframes anim-star-fav-rotate {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(395deg);
+  }
+}
+@keyframes anim-star-fav-opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 60, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-front:hover {
+  text-decoration: none;
+}
+
+/* line 64, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-back {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* line 70, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/likes.scss */
+.star-rating-back:hover {
+  text-decoration: none;
+}
+.container-index {
+    height: 1150px;
+    margin-top: 88px;
+}
+
+.col-lg-12-main {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.col-md-6.portfolio-item {
+    margin-top: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 5px;
+}
+
+.box{
+    margin-top: 40px;
+}
+
+.row-quarter {
+    width: 690px
+    height: 640px;
+}
+
+.btn-group {
+    margin-right: 64%;
+    height: 40px;
+    margin-top: -73px;
+    background-color: #F0F8FF;
+}
+
+.btn.btn-default-main {
+    font-family: "ＭＳ P明朝",serif;
+	height: 45px;
+	background-color: #F0F8FF;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-bottom: solid 4px #C0C0C0;
+    border-radius: 5px;
+}
+.btn-group:active { -ms-transform: translateY(4px);
+-webkit-transform: translateY(4px);
+transform: translateY(4px); box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); border-bottom: none;
+}
+
+.btn.btn-default.dropdown-toggle {
+    font-family: "ＭＳ P明朝",serif;
+	height: 45px;
+    background-color: #F0F8FF;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: solid 4px #C0C0C0;
+    border-radius: 5px;
+}
+.btn-group:active { -ms-transform: translateY(4px);
+-webkit-transform: translateY(4px);
+transform: translateY(4px); box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2); border-bottom: none;
+}
+
+.btn-lg, .btn-group-lg>.btn {
+    padding: 5px 0px;
+}
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+body {
+  background-color: #fff;
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 18px;
+}
+
+/* line 11, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 15, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 19, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 25, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+#error_explanation {
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 10px;
+}
+/* line 29, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/mm_ms.scss */
+#error_explanation h2 {
+  padding: 5px 5px 5px 15px;
+  font-size: 14px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+
+figcaption,
+figure,
+main { /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+  color: #000000;
+  text-decoration: none;
+  font-family: "ＭＳ P明朝",serif;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+
+b,
+strong {
+  font-weight: inherit;
+  font-size: 30px;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+
+details, /* 1 */
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10-.
+ */
+
+[hidden] {
+  display: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+p {
+  font-family: "ＭＳ P明朝",serif;
+  padding: 0px;
+}
+
+li {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+em {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+h1 {
+  font-family: "ＭＳ P明朝",serif;
+  color: #364e96;
+  padding: 0.5em 0;
+  border-top: solid 3px #0000FF;
+  border-bottom: solid 3px #0000FF;
+}
+
+h2 {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+h3 {
+  font-family: "ＭＳ P明朝",serif;
+  font-size: 25px;
+  color: #000080;
+  width: 350px;
+  margin: auto;
+  position: relative;
+  padding: 0.25em 1em;
+  border-top: solid 2px #0000FF;
+  border-bottom: solid 2px #0000FF;
+}
+h3:before, h3:after{
+  content: '';
+  position: absolute;
+  top: -7px;
+  width: 2px;
+  height: -webkit-calc(100% + 14px);
+  height: calc(100% + 14px);
+  background-color: #0000FF;
+}
+h3:before {left: 7px;}
+h3:after {right: 7px;}
+}
+
+form-control {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+input {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+label {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+.container {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+.btn-block {
+  font-family: "ＭＳ P明朝",serif;
+}
+
+#error_explanation ul li {
+  list-style: none;
+}
+/* line 1, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.col-md-6.col-md-offset-3.col-sm-10.col-sm-offset-1.ranking {
+  margin-top: 120px;
+}
+
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.row-ranking {
+  margin-top: 25px;
+  padding-left: 65px;
+  padding-top: 5px;
+  padding-right: 65px;
+  padding-bottom: 15px;
+  height: 100%;
+  margin-bottom: 20px;
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* line 16, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.row-ranking hover {
+  text-decoration: none;
+}
+
+/* line 21, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.ranking-rank {
+  margin-left: -40%;
+  color: #FF00FF;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+/* line 29, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.ranking-count {
+  margin-left: 70%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FF8C00;
+}
+
+/* line 37, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.ranking-user {
+  margin-top: 3px;
+  margin-bottom: 3px;
+  font-size: 18px;
+}
+
+/* line 43, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.ranking-title {
+  margin-top: 3px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* line 49, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/ranking.scss */
+.ranking-image {
+  padding: 2px;
+  margin-bottom: 40px;
+  border: double 4px #1E90FF;
+}
+@charset "UTF-8";
+/* line 5, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.container-users {
+  margin-top: 105px;
+}
+
+/* line 9, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.container-child.col-md-2.col-sm-4.col-xs-6.users {
+  margin-top: 12px;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 100px;
+  margin-bottom: 70px;
+}
+/* line 14, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.container-child.col-md-2.col-sm-4.col-xs-6.users .box30 {
+  height: 100%;
+  width: 100%;
+  margin: 1em 1em;
+  margin-left: 3px;
+  margin-right: 3px;
+  background: #F0F8FF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.22);
+}
+/* line 24, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.container-child.col-md-2.col-sm-4.col-xs-6.users .box-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-family: "ＭＳ P明朝",serif;
+  background: #5fc2f5;
+  padding: 4px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/* line 38, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.box-email {
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-buttom: 5px;
+  font-family: "ＭＳ P明朝",serif;
+}
+
+/* line 46, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.box-img {
+  width: 50%;
+  margin-left: 25%;
+}
+
+/* line 51, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.item {
+  margin-left: -2%;
+  padding-bottom: 5px;
+}
+
+/* line 56, /Users/watanabekenichi/Documents/projects/MMM/app/assets/stylesheets/users.scss */
+.btn.btn-large.btn-primary.user {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+// Bootstrap Sass
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+html,body {
+  position: relative;
+  background-color: #fff;
+  min-height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 55px;
+  background-color: #EEFFFF;
+  margin: auto;
+  font-size: 20px;
+  position: relative;
+}
+
+.main-body {
+  margin-top: 17px;
+}
+
+.navbar-brand {
+  margin-left: 44%;
+  margin-top: 17px;
+  font-size: 50px;
+  font-family: cursive;
+  text-decoration: none;
+  color: #FF0000;
+  text-shadow: -10px 10px 0px rgba(10, 10, 10, 0.32), 0px 0px 0px #777, 0px 0px 0px #777, 0px 0px 0px #777;
+.navbar-brand:active {
+  top: 4px;
+  box-shadow: none;
+  }
+}
+
+.navbar-brand-signout {
+    margin-right: 580px;
+    left: 450px;
+    font-size: 20px;
+    position: relative;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+    height: 82px;
+    background-color: #EEFFFF;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #EEFFFF;
+  margin: auto;
+  padding-top: 10px;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.flash {
+  color: #000000;
+  padding-top: 100px;
+}
+
+.btn-sm, .btn-group-sm>.btn {
+	padding-top: 3px;
+    height: 27px;
+    width: 92px;
+}
+
+ol.topic-path {
+margin-left: 1000px;
+padding: 17px 0px;
+list-style-type: none;
+font-size: 100%;
+}
+
+ol.topic-path li {
+padding-left: 5px;
+display: inline;
+}
+
+ol.topic-path li.first {
+padding-left: 25px;
+background: url(../image/topic-path-home-gray.png) no-repeat left;
+}
+
+ol.topic-path li a {
+padding-right: 18px;
+background: url(../image/topic-path-gray.gif) no-repeat right;
+}
+
+ol.topic-path li a {
+color: #00008B;
+}
+
+ol.topic-path li a:hover {
+color: #00008B;
+}
