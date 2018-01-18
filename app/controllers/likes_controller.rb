@@ -12,7 +12,6 @@ class LikesController < ApplicationController
   end
 
   private
-
   def set_variables
     @blog = Blog.find(params[:blog_id])
     @id_name = "#like-link-#{@blog.id}"
